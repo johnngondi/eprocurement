@@ -1,0 +1,249 @@
+html {
+	font-family: Century Gothic;
+	background-image: url("../images/bg/1.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+.main {
+	margin-top: 10%;
+	font-size: 2em;
+}
+
+.top-header {
+	margin-top: 4px;
+}
+
+.btn-orange {
+	background-color: orange;
+	border-radius: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: white;
+	font-size: 0.8em;
+	border: dotted 0.5px white;
+
+}
+.btn-orange:hover {
+	background-color: white;
+	border: dotted 0.5px orange;
+	color: orange;
+
+}
+
+
+.btn-orange-small {
+	background-color: orange;
+	border-radius: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	font-size: 0.8em;
+	border: solid 0.5px white;
+
+}
+.btn-orange-small:hover {
+	background-color: white;
+	border: solid 0.5px orange;
+	color: orange;
+
+}
+
+.btn-white-small {
+	background-color: white;
+	border-radius: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: orange;
+	font-size: 0.8em;
+	border: solid 0.5px orange;
+
+}
+.btn-white-small:hover {
+	background-color: orange;
+	border: solid 0.5px white;
+	color: white;
+
+}
+
+.panel {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-radius: 10px;
+	border:  1px orange solid;
+}
+
+.dpic{
+	border: 2px solid orange;
+	border-radius:10px;	
+	height: 150px;
+	width: 150px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+
+}
+
+.xxl-text {
+	font-size: 6em;
+}
+
+.xl-text {
+	font-size: 4em;
+}
+
+.l-text {
+	font-size: 1.5em;
+}
+
+.s-text {
+	font-size: 0.8em;
+}
+
+.xs-text {
+	font-size: 0.5em;
+}
+@media print {
+	.hide-print {
+		display: none;
+	}
+}
+
+
+  /* label color */
+.input-field label {
+    color: orange;
+}
+.input-field input[type=passord]:focus {
+	border-bottom: solid 1px orange !important; 
+}
+.input-field input[type=password]:focus + label {
+    color: orange;
+}
+   /* label underline focus color */
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid orange;
+    box-shadow: 0 1px 0 0 orange;
+}
+   /* icon prefix focus color */
+.input-field .prefix.active {
+    color: orange;
+}
+
+@-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg);
+
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);		
+	}
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+
+	}
+
+	to {
+		transform: rotate(360deg);		
+	}
+}
+
+.circular {
+	animation: rotating 1.5s linear infinite;
+	position: relative;
+}
+
+.lose-focus{
+	pointer-events: none;
+	opacity: .8;
+}
+
+.error-input{
+	color: #a94442 !important;
+}
+
+input.error-input{
+	border-bottom: 2px solid #a94442 !important;
+}
+
+input.ok-input{
+	border-bottom: 1px solid #4CAF50 !important;
+}
+
+.btn-login, a.btn-login {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	border: 1px solid orange;
+	border-radius: 30px;
+	color: orange;
+	background-color: white;
+	font-size: 1.2em;
+}
+
+.btn-login:hover, a.btn-login:hover{
+
+	color: white;
+	background-color: orange;
+}
+
+.btn-apply, a.btn-apply {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	border: 1px solid orange;
+	border-radius: 30px;
+	color: white !important;
+	background-color: orange !important;
+	font-size: 1.2em;
+}
+
+.btn-apply:hover, a.btn-apply:hover{
+
+	color: orange !important;
+	background-color: white !important;
+}
+
+.btn-cancel, a.btn-cancel {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	border: 1px solid #ef5350;
+	border-radius: 30px;
+	color: white;
+	background-color: #ef5350;
+}
+
+.btn-cancel:hover, a.btn-cancel:hover{
+
+	color: #ef5350;
+	background-color: white;
+}
+
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0 ,0, 0.9);
+	z-index: 9;
+	text-align: center;
+	display: none;
+}
